@@ -25,8 +25,8 @@ jobs:
         env:
           S3_UPLOAD_BUCKET: ${{ secrets.S3_UPLOAD_BUCKET }}
         run: |
-          aws s3 cp s3://$S3_UPLOAD_BUCKET/ ./  --quiet
+          aws s3 sync . s3://$S3_UPLOAD_BUCKET/
 
       - name: List contents
         run: |
-          ls -l
+          aws s3 ls s3://$S3_UPLOAD_BUCKET
