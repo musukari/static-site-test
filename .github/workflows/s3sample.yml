@@ -28,6 +28,7 @@ jobs:
           aws s3 sync . s3://$S3_UPLOAD_BUCKET/
           aws s3 rm s3://$S3_UPLOAD_BUCKET/.git --recursive
           aws s3 rm s3://$S3_UPLOAD_BUCKET/.github --recursive
+          aws s3 rm s3://$S3_UPLOAD_BUCKET/.gitignore
 
       - name: List contents
         run: |
