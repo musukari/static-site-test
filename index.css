@@ -1,0 +1,11 @@
+@font-face{
+	font-family:"M PLUS Rounded 1c","ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ W3","メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	font-display:swap;
+}
+
+body{
+	font-size:16px; font-size: 1.6rem;
+	font-family:"M PLUS Rounded 1c";
+	line-height:2rem;
+	color:#5a471c;
+}
